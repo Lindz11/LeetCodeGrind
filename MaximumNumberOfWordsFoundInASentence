@@ -1,0 +1,14 @@
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        // Commong string problem, need to check for spaces in the sentences given 
+        int max = 0; 
+        for(String s: sentences) {
+            String [] splited = s.split(" "); 
+            int count_max = splited.length; 
+            if(count_max > max)
+                max = count_max; 
+        }
+
+        return max; 
+    }
+}
